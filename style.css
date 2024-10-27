@@ -1,0 +1,209 @@
+:root {
+    /* Colors */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-magenta: hsl(300, 69%, 71%);
+    --white: hsl(0, 0%, 100%);
+    /* Fonts */
+    --fs-p: 0.85rem;
+    --fs-h: 2rem;
+    --fs-rh: 1.7rem;
+    --fs-mh: 1.4rem;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-opensans-400: 400;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+* {
+    margin: 0;
+}
+  
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--Violet);
+}
+
+.bodyContainer{
+    width: 100%;
+    padding: 0 5%;
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.huddleLogo{
+    width: 10rem;
+    padding: 3rem 0 5rem;
+}
+
+.huddleLogo img{
+    width: 100%;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.huddleImage{
+    flex-basis: 60%;
+}
+
+.huddleImage img{
+    width: 100%;
+}
+
+.huddleText{
+    flex-basis: 35%;
+    margin-top: 4rem;
+}
+
+.huddleText h2{
+    font-family: 'Poppins';
+    font-size: var(--fs-h);
+    font-weight: var(--fw-600);
+    color: var(--white);
+}
+
+.huddleText p{
+    font-family: 'Open Sans';
+    font-size: var(--fs-p);
+    font-weight: var(--fw-400);
+    color: var(--white);
+    margin: 1.4rem 0;
+}
+
+button{
+    font-family: 'Open Sans';
+    font-size: var(--fs-p);
+    font-weight: var(--fw-400);
+    color: var(--Violet);
+    padding: 0.7rem 3rem;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--Soft-magenta);
+    color: var(--white);
+}
+
+.socials{
+    display: flex;
+    justify-content: end;
+    gap: 0.9rem;
+}
+
+.socials i{
+    color: var(--white);
+    padding: 0.4rem;
+    margin-bottom: 3rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+
+.socials i:hover{
+    color: var(--Soft-magenta);
+    border-color: var(--Soft-magenta);
+}
+
+
+.fa-facebook-f{
+    padding: 0.4rem 0.6rem !important;
+}
+  
+.attribution{
+    font-family: 'Open Sans';
+    font-size: 11px; text-align: center;
+    padding-bottom: 0.2rem;
+}
+
+.attribution a{
+    color: var(--white)
+}
+
+@media (max-width: 1114px){
+    .huddleText h2{
+        font-size: var(--fs-rh);
+    }
+}
+
+@media (max-width: 950px){
+
+    .mainContainer{
+        margin-bottom: 3rem;
+    }
+
+    .huddleImage{
+        flex-basis: 55%;
+    }
+
+    .huddleText{
+        flex-basis: 40%;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 830px){
+
+    .bodyContainer{
+        padding: 0 7.5%;
+        background-image: url(./images/bg-mobile.svg);
+        background-size: 100% 60%;
+    }
+
+    .mainContainer{
+        margin-bottom: 4rem;
+    }
+
+    .huddleLogo{
+        width: 9rem;
+        padding: 3rem 0 3rem;
+    }
+
+    .mainContainer{
+        flex-direction: column;
+    }
+
+    .huddleText{
+        width: 80%;
+        margin: 2rem auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .huddleText h2{
+        font-size: var(--fs-h);
+    }
+
+    .socials{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px){
+
+    .bodyContainer{
+        background-size: 100% 45%;
+    }
+
+    .huddleText{
+        width: 95%;
+    }
+
+    .huddleText h2{
+        font-size: var(--fs-mh);
+    }
+}
