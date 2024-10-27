@@ -47,7 +47,7 @@ body {
 .mainContainer{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .huddleImage{
@@ -63,7 +63,7 @@ body {
     margin-top: 4rem;
 }
 
-.huddleText h2{
+.huddleText h1{
     font-family: 'Poppins';
     font-size: var(--fs-h);
     font-weight: var(--fw-600);
@@ -132,16 +132,12 @@ button:hover{
 }
 
 @media (max-width: 1114px){
-    .huddleText h2{
+    .huddleText h1{
         font-size: var(--fs-rh);
     }
 }
 
 @media (max-width: 950px){
-
-    .mainContainer{
-        margin-bottom: 3rem;
-    }
 
     .huddleImage{
         flex-basis: 55%;
@@ -159,10 +155,6 @@ button:hover{
         padding: 0 7.5%;
         background-image: url(./images/bg-mobile.svg);
         background-size: 100% 60%;
-    }
-
-    .mainContainer{
-        margin-bottom: 4rem;
     }
 
     .huddleLogo{
@@ -184,7 +176,7 @@ button:hover{
         text-align: center;
     }
 
-    .huddleText h2{
+    .huddleText h1{
         font-size: var(--fs-h);
     }
 
@@ -203,7 +195,7 @@ button:hover{
         width: 95%;
     }
 
-    .huddleText h2{
+    .huddleText h1{
         font-size: var(--fs-mh);
     }
 }
